@@ -1,0 +1,16 @@
+{
+  "name": "cosmic-visualization",
+  "version": "1.0.0",
+  "description": "Interactive cosmic and particle physics visualization web app",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.159.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

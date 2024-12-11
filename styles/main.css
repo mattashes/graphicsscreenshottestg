@@ -1,0 +1,103 @@
+/* Modern UI styling with Apple-inspired design */
+:root {
+    --primary-bg: rgba(28, 28, 30, 0.8);
+    --accent-purple: #bf5af2;
+    --accent-blue: #0a84ff;
+    --accent-pink: #ff375f;
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --blur-bg: rgba(28, 28, 30, 0.6);
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+canvas {
+    display: block;
+}
+
+.ui-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-panel {
+    background: var(--blur-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 20px 40px;
+    border-radius: 16px;
+    text-align: center;
+    color: var(--text-primary);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+.info-panel h1 {
+    margin: 0;
+    font-size: 24px;
+    background: linear-gradient(120deg, var(--accent-purple), var(--accent-blue), var(--accent-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.info-panel p {
+    margin: 8px 0 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.scene-selector {
+    display: flex;
+    gap: 10px;
+    background: var(--blur-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+.scene-button {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.scene-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+}
+
+.scene-button.active {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--text-primary);
+    box-shadow: 0 0 20px rgba(191, 90, 242, 0.3);
+}
+
+.scene-icon {
+    font-size: 20px;
+}
+
+.scene-name {
+    font-size: 14px;
+    font-weight: 500;
+}
